@@ -16,5 +16,4 @@ vgcore.*
 *.d
 *.a
 *.log
-src/isodir
 src/sysroot
