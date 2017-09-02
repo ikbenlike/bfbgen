@@ -1,3 +1,14 @@
+*
+!/**/
+!*.*
+!Makefile
+*.o
+*.so
+*.lib
+*.dll
+vgcore.*
+*.out
+*.bfout.c
 *.bin
 *.o
 *.iso
