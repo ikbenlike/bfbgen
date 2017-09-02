@@ -1,0 +1,9 @@
+*.bin
+*.o
+*.iso
+*.kernel
+*.d
+*.a
+*.log
+src/isodir
+src/sysroot
