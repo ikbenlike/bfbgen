@@ -1,5 +1,5 @@
 //
-// Prefix for bf2c code generation fase
+// Prefix for bf2c code generation phase
 // Provides kernel_bfmain function to be called
 // by boot.s and declares the array the
 // brainfuck code needs to function

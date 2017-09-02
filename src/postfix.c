@@ -2,5 +2,5 @@
 }
 
 //
-// Postfix for the bf2c code generation fase
+// Postfix for the bf2c code generation phase
 //
