@@ -10,7 +10,6 @@ size_t strlen(const char *str){
     return len;
 }
 
-
 static inline uint8_t vga_entry_color(enum vga_color fg, enum vga_color bg){
     return fg | bg << 4;
 }
@@ -82,4 +81,16 @@ void vga_write(const char* data, size_t size){
  
 void vga_writestring(const char *data){
     vga_write(data, strlen(data));
+}
+
+void putchar(char c){
+    vga_write(&c, 1);
+}
+
+void *memset(void *bufptr, int value, size_t size){
+    unsigned char *buf = (unsigned char*)bufptr;
+    for(size_t i = 0; i < size; i++){
+        buf[i] = (unsigned char)value;
+    }
+    return bufptr;
 }

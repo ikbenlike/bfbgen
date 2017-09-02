@@ -27,3 +27,5 @@ void vga_putentryat(char c, uint8_t color, size_t x, size_t y);
 void vga_putchar(char c);
 void vga_write(const char* data, size_t size);
 void vga_writestring(const char* data);
+void putchar(char c);
+void *memset(void *bufptr, int value, size_t size);

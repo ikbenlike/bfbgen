@@ -15,18 +15,6 @@
 
 #include "vga_driver.h"
 
-void putchar(char c){
-    vga_write(&c, 1);
-}
-
-void *memset(void *bufptr, int value, size_t size){
-    unsigned char *buf = (unsigned char*)bufptr;
-    for(size_t i = 0; i < size; i++){
-        buf[i] = (unsigned char)value;
-    }
-    return bufptr;
-}
-
 void kernel_bfmain(void){
     vga_initialize();
     char array[30000] = {0};
